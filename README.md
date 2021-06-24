@@ -33,7 +33,7 @@ For ImageNet resnet101 pre-trained model, please download from https://github.co
 4. Run `split_train_test.py` to make train/test split. (making sure that the images used to generate training set not overlap with the images for testing)
 
 # Train on synthetic dataset
-1. Change the coco synthetic path in `lib/factory.py`:
+1. Change the coco synthetic path in `lib/datasets/factory.py`:
 ```
 coco_path= #FIXME
 for split in ['coco_train_filter_single', 'coco_test_filter_single']:
