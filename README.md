@@ -1,4 +1,4 @@
-# Running a RGB-N Program on the CRC using singularity
+# Running the RGB-N code on the CRC GPUs using singularity
 
 ## Download the Singularity image to your `/scratch365` directory. 
 
