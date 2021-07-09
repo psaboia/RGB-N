@@ -76,7 +76,7 @@ set -x
 if [ ! -f ${NET_FINAL}.index ]; then
     if [[ ! -z  ${EXTRA_ARGS_SLUG}  ]]; then
         python3 ./tools/trainval_net.py \
-            --weight /vulcan/scratch/pengzhou/RGB-N/data/imagenet_weights/res101.ckpt \
+            --weight ~/rgbn/data/imagenet_weights/res101.ckpt \
             --imdb ${TRAIN_IMDB} \
             --imdbval ${TEST_IMDB} \
             --iters ${ITERS} \
@@ -86,7 +86,7 @@ if [ ! -f ${NET_FINAL}.index ]; then
             --set ANCHOR_SCALES ${ANCHORS} ANCHOR_RATIOS ${RATIOS} TRAIN.STEPSIZE ${STEPSIZE} ${EXTRA_ARGS}
     else
         python3 ./tools/trainval_net.py \
-            --weight /home-3/pengzhou@umd.edu/work/pengzhou/software/models/tf-faster-rcnn/data/imagenet_weights/${NET}.ckpt \
+            --weight ~/rgbn/data/imagenet_weights/res101.ckpt \
             --imdb ${TRAIN_IMDB} \
             --imdbval ${TEST_IMDB} \
             --iters ${ITERS} \

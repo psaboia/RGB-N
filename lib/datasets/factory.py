@@ -58,7 +58,7 @@ for split in ['casia_train_all_single', 'casia_test_all_single']:
     name = split
     __sets[name] = (lambda split=split: casia(split,2007,casia_path))
 
-coco_path='/vulcan/scratch/pengzhou/dataset/filter_tamper'
+coco_path='/afs/crc.nd.edu/user/p/pmoreira/rgbn/datasets/coco_synthetic_v0'
 for split in ['coco_train_filter_single', 'coco_test_filter_single']:
     name = split
     __sets[name] = (lambda split=split: coco(split,2007,coco_path))
